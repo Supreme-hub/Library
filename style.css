@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+*{
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    margin: 0;
+    background: #14213D;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: #FFFFFF;
+    font-size: 40px;
+    height: 60px;
+}
+
+#adder {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#adder button {
+    border: none;
+    background: #E5E5E5;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: larger;
+}
+
+main {
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(20% ,45%))/ repeat(auto-fit, minmax(100px, 400px));
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    
+}
