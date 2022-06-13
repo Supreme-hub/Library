@@ -35,11 +35,44 @@ header{
 
 main {
     display: grid;
-    grid-template: repeat(auto-fit, minmax(20% ,45%))/ repeat(auto-fit, minmax(100px, 400px));
+    grid-template: repeat(auto-fit, minmax(200px ,100%))/ repeat(auto-fit, minmax(100px, 400px));
+    gap: 10px;
 }
 
 .book {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background: #E5E5E5;
+    border-radius: 20px;
+    padding: 10px 2px;
+    font-size: 15px;
+}
+
+.book button {
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    background: hsl(230, 42%, 83%);
+    color: rgb(24, 21, 37);
+    font-size: 15px;
+    text-align: center;
+}
+
+.book .bookbtn {
+    background: rgb(16, 146, 66);
+    color: white;
+}
+#bookmenu {
+    display: none;
+    position: absolute;
+    top: 45%;
+    flex-flow: column;
+    background:#E5E5E5;
+    padding:10% 5%;
+    border-radius: 20px;
     
 }
