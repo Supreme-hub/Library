@@ -82,13 +82,22 @@ function setBtns() {
     ReadBtns.forEach(Btn => {
         Btn.addEventListener('click', ()=> {
             let BtnC = window.getComputedStyle(Btn).getPropertyValue('background-color');
+            let indexe = Btn.parentElement.getAttribute('data-book-index');
+            let mylibindex = 0;
+            for (let i = 0; i < myLibrary.length; i++) {
+                if (myLibrary[i].index === indexe) {
+                   mylibindex = i; 
+                }
+            }
             if (BtnC === "rgb(16, 146, 66)") {
                 Btn.setAttribute("style", "background:rgb(196, 68, 68);")
                 Btn.innerText = "Not Read"
+                myLibrary[mylibindex].isRead = false;
             }
             else {
                 Btn.setAttribute("style", "background:rgb(16, 146, 66);")
                 Btn.innerText = "Read"
+                myLibrary[mylibindex].isRead = true;
             }
         })
     })
