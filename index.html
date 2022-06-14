@@ -15,9 +15,18 @@
         <button id="addbook">Add Book</button>
         <div id="bookmenu">
             <h3>Add Book</h3>
-            <input type="text" placeholder="Title">
-            <input type="text" placeholder="Author">
-            <input type="text" placeholder="Pages">
+            <h4 id="warnfill">Please Fill All Inputs</h4>
+            <input type="text" placeholder="Title" id="booktitle" required>
+            <input type="text" placeholder="Author" id="bookauthor" required>
+            <input type="number" placeholder="Pages" id="bookpages" required>
+            <div id="ReadBooler">
+                <input type="checkbox" name="ReadBool" id="ReadBool" value="1">
+                <label for="ReadBool">Have You Read It</label>
+            </div>
+            <div id="Submitter">
+                <button id="CancelAdd">Cancel</button>
+                <button id="SubmitAdd">Submit</button>
+            </div>
         </div>
     </div>
     <main>

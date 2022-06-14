@@ -66,13 +66,67 @@ main {
     background: rgb(16, 146, 66);
     color: white;
 }
+
+.book h3 {
+    margin: 5px 2px;
+    background: #c4c4c48f;
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
 #bookmenu {
     display: none;
     position: absolute;
     top: 45%;
     flex-flow: column;
     background:#E5E5E5;
-    padding:10% 5%;
+    padding:3% 2.5%;
     border-radius: 20px;
-    
+}
+
+#bookmenu label {
+    font-size: 12px;
+    display: inline;
+}
+
+#bookmenu input {
+    margin: 2px 0;
+    border: none;
+    padding: 4px 2px;
+    border-radius: 3px;
+}
+
+#ReadBooler {
+    margin: 5px 2px;
+    font-size: 12px;
+}
+
+#CancelAdd, #SubmitAdd {
+    border: none;
+    margin: 3px 2px;
+    padding: 5px 2px;
+}
+
+#Submitter #CancelAdd {
+    background: rgb(160, 37, 37);
+    color: #FFF;
+}
+
+#Submitter #SubmitAdd {
+    background: rgb(19, 124, 36);
+    color: #FFF;
+}
+
+#warnfill {
+    margin: 2px 0 7px 0;
+    padding: 5px 2px;
+    border: solid 3px rgb(143, 42, 42);
+    border-radius: 10px;
+    background: rgba(252, 3, 3, 0.658);
+    display: none;
+    color: #FFF;
+    font-size: 13px;
 }
