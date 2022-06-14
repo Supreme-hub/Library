@@ -26,7 +26,7 @@ function addBookToLibrary(title, author, pages, isRead) {
     const thebook = new book(title, author, pages, isRead, booknumber)
     myLibrary.push(thebook)
     createBookCard(thebook)
-    booknum++;
+    booknumber++;
 }
 
 function createBookCard(book) {
@@ -42,7 +42,7 @@ function createBookCard(book) {
     let rmvbtner = document.createElement('button');
     rmvbtner.innerText = "Remove";
     readbtner.classList.add('bookbtn');
-    if (book.isRead === true) {
+    if (book.isRead === false) {
         readbtner.style.backgroundColor = "rgb(196, 68, 68)";
         readbtner.innerText = "Not Read";
     }
