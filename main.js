@@ -14,12 +14,15 @@ const ReadBool = document.querySelector('#ReadBool');
 const WarnFill = document.querySelector('#warnfill');
 let booknumber = 0;
 
-function book(title, author, pages, isRead, booknum) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.isRead = isRead
-    this.index = booknum
+class book {
+    constructor(title, author, pages, isRead, booknum) {
+        this.title = title
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.isRead = isRead
+        this.index = booknum
+    }
 }
 
 function addBookToLibrary(title, author, pages, isRead) {
